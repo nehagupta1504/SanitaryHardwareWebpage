@@ -5,13 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Krishna Sanitary</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles.css" />
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link
       rel="stylesheet"
@@ -29,11 +23,38 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
     />
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
-    <div class="container-fluid bg-dark firstdiv" id="navbarSupportedContent">
+    <div class="container-fluid bg-dark firstdiv" id="navbardiv">
       <!-- <div class="mr-auto bg-dark " style=" float: right; margin-right: 50px">
             <a href="#" style="color: aliceblue;font-size: large;">Login</a>
             <span  style="color: aliceblue;font-size: large;">&nbsp;/ &nbsp;</span>
@@ -54,6 +75,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbardiv">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -65,8 +87,7 @@
                 href="#"
                 id="sanitaryware"
                 role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
+                data-bs-toggle="dropdown"
                 aria-expanded="false"
                 >Sanitary Ware</a
               >
@@ -77,6 +98,7 @@
                 <a class="dropdown-item" href="#"> Urinals</a>
               </div>
             </li>
+            <li></li>
             <li class="nav-item">
               <a class="nav-link" href="#">Faucets</a>
             </li>
@@ -86,7 +108,7 @@
                 href="#"
                 id="faucets"
                 role="button"
-                data-toggle="dropdown"
+                data-bs-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
                 >Tiles</a
@@ -172,10 +194,10 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <div class="container-fluid">
-        <h1 class="text-center" style="color: white">Products</h1>
+      <div class="container sub-container">
+        <h1 class="text-center h1" style="color: white">Products</h1>
         <p
-          class="text-center"
+          class="text-center second-heading"
           style="text-align: center; margin: 0px; margin-top: 20px"
         >
           Krishna Sanitary Hardware & Paints Welcomes you!!
@@ -185,12 +207,12 @@
           products. To compliement the Sanitaryware products there is a range of
           faucets, titles, shower products, Kitchen & personal care products
         </p>
-        <div class="row">
-          <div class="col-4">
+        <div class="row product-container">
+          <div class="col-sm-12 col-md-4">
             <a href="#">
               <img
                 src="./assets/page-images/220px-Artize_Tailwater_Faucet.jpg"
-                class="center"
+                class="product-center"
             /></a>
             <p class="text-center">
               We bring you the top quality sanitary faucets. Our portfolio is
@@ -198,11 +220,11 @@
               items.
             </p>
           </div>
-          <div class="col-4">
+          <div class="col-sm-12 col-md-4">
             <a href="#"
               ><img
                 src="./assets/page-images/cameo-30-year-logo1-449x320.jpg"
-                class="center"
+                class="product-center"
             /></a>
             <p class="text-center">
               We bring you the top quality sanitary faucets. Our portfolio is
@@ -210,11 +232,11 @@
               items.
             </p>
           </div>
-          <div class="col-4">
+          <div class="col-sm-12 col-md-4">
             <a href="#"
               ><img
                 src="./assets/page-images/blurred-image-toilet-bowls-aisle-260nw-1276265848.jpg"
-                class="center"
+                class="product-center"
             /></a>
             <p class="text-center">
               We bring you the top quality sanitary faucets. Our portfolio is
@@ -224,15 +246,15 @@
           </div>
         </div>
       </div>
-      <div class="swiper-container mySwiper">
-        <h1 class="text-center" style="color: white">Trending Products</h1>
+      <div class="container swiper-container mySwiper">
+        <h1 class="text-center h1" style="color: white">Trending Products</h1>
         <p
           class="text-center"
           style="
             text-align: center;
             margin: 0px;
             margin-top: 20px;
-            font-size: medium;
+            font-size: large;
           "
         >
           Here our some of our top range products!!
@@ -272,7 +294,7 @@
       <footer>
         <div class="container">
           <div class="row">
-            <div class="col-sm-6 col-md-3 item">
+            <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3 item">
               <h3>Services</h3>
               <ul>
                 <li><a href="#">Sanitary</a></li>
@@ -280,7 +302,7 @@
                 <li><a href="#">Fiitings</a></li>
               </ul>
             </div>
-            <div class="col-sm-6 col-md-3 item">
+            <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3 item">
               <h3>About</h3>
               <ul>
                 <li><a href="#">Company</a></li>
@@ -288,7 +310,7 @@
                 <li><a href="#">About us</a></li>
               </ul>
             </div>
-            <div class="col-md-6 item text">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 item text">
               <h3>Krishna Sanitary Hardware & Paints</h3>
               <p style="color: #f8eaef">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -297,7 +319,7 @@
                 voluptate. Debitis quis quidem nihil!
               </p>
             </div>
-            <div class="col item social">
+            <div class="col item social col-sm-12 col-md-12">
               <a href="#"><i class="icon ion-social-facebook"></i></a>
               <a href="#"><i class="icon ion-social-instagram"></i></a>
               <a href="#"><i class="icon ion-social-twitter"></i></a>
@@ -308,26 +330,7 @@
         </div>
       </footer>
     </div>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
     <script src="./app.js"></script>
   </body>
 </html>
